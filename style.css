@@ -1,0 +1,67 @@
+/* Mengatur tampilan halaman agar kalkulator pas di tengah */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pastikan body selalu setinggi layar */
+    background-color: #002147; /* Biru navy gelap */
+    margin: 0;
+}
+
+/* Kotak utama kalkulator (sedikit diperbesar) */
+.calculator {
+    background: #34495e;
+    padding: 20px; /* Padding sedikit diperbesar */
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px; /* Lebar kalkulator diperbesar */
+}
+
+/* Tampilan layar (sedikit lebih besar) */
+#display {
+    width: 95%;
+    height: 60px; /* Tinggi layar diperbesar */
+    font-size: 1.8rem; /* Ukuran angka diperbesar */
+    font-weight: bold;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #000000;
+    margin-bottom: 12px; /* Spasi bawah sedikit diperbesar */
+}
+
+/* Tombol lebih besar */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px; /* Jarak antar tombol sedikit diperbesar */
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px; /* Ukuran tombol sedikit diperbesar */
+    font-size: 1.2rem; /* Font tombol diperbesar */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Tombol operator */
+button.operator {
+    background-color: #e74c3c;
+}
+
+/* Tombol = */
+button.equal {
+    background-color: #2ecc71;
+}
+
+/* Efek hover */
+button:hover {
+    opacity: 0.8;
+}
